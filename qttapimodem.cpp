@@ -1028,6 +1028,10 @@ QList<TAPIModemInfo> TAPIModemInfo::availableModems()
     return list;
 }
 
+DialableNumberBuilder::DialableNumberBuilder()
+{
+}
+
 DialableNumberBuilder &DialableNumberBuilder::AddCountryCode(int countryCode)
 {
     _dialableNumber.append(QString("+ %1 ").arg(countryCode));
