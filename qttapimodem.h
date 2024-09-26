@@ -196,8 +196,8 @@ class QTM_EXPORT TAPIModemInfo
 {
 public:
     static QList<TAPIModemInfo> availableModems();
-    qint32 deviceId() { return devId; }
-    QString modemName() { return name; }
+    qint32 deviceId() const { return devId; }
+    QString modemName() const { return name; }
 
 private:
     qint32 devId;
