@@ -49,7 +49,7 @@ class QTM_EXPORT TAPIModem : public QIODevice
 public:
     enum TAPIError {NoError = 0x00, InitError = 0x01, CommAquireError = 0x02, LineReplyError = 0x03, CallStatusAquireError = 0x04, CallDeallocationError = 0x05,
                     NoDeviceFoundError = 0x06, NegotiationError = 0x07, LineOpenError = 0x08, CallMakeError = 0x09, CommWriteError = 0x0A, LineDeallocationError = 0x0B,
-                    CommReadError = 0x0B, OperationError = 0xFF};
+                    CommReadError = 0x0C, OperationError = 0xFF};
     Q_FLAG(TAPIError)
     Q_DECLARE_FLAGS(TAPIErrors, TAPIError)
 
